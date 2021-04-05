@@ -1,4 +1,6 @@
-﻿import { Component } from '@angular/core';
+﻿
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { User } from '@app/_models';
 import { AccountService } from '@app/_services';
@@ -11,3 +13,5 @@ export class HomeComponent {
         this.user = this.accountService.userValue;
     }
 }
+
+
