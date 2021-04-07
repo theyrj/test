@@ -82,6 +82,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                 delete params.password;
             }
 
+            
             // update and save user
             Object.assign(user, params);
             localStorage.setItem(usersKey, JSON.stringify(users));
